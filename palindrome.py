@@ -1,11 +1,12 @@
-#WAP to check whether its a palindrome or not.
-#m1
-a=input('enter string: ')
-b=a[::-1]
-if a==b:
-    print(a, 'is a palindrome')
-else:
-    print(a, 'is not a palindrome')
-    
 
-    
+rev=0
+n=int(input("enter n value"))
+temp=n;
+while(n!=0):
+    rem=n%10
+    rev=rev*10+rem
+    n=n//10
+if temp==rev:
+    print("1")
+else:
+    print("0")
